@@ -6,7 +6,7 @@ Este é um projeto simples de sistema bancário feito em Python como parte do **
 
 - [x] Depósito de valores
 - [x] Saque com verificação de saldo, limite e número de saques diários
-- [x] Visualização de extrato com histórico de transações
+- [x] Visualização de extrato com histórico de transações exibindo data e hora
 - [x] Interface de menu interativo no terminal
 - [x] Validações de entrada para garantir integridade dos dados
 
