@@ -26,7 +26,7 @@ cd sistema-bancario-python
 ```
 3. Execute o arquivo Python:
 ```
-python sistema_bancario.py
+python banco_v1.py
 ```
 ---
 
