@@ -40,13 +40,13 @@ def withdraw(*, saldo, limite, extrato, numero_saques, LIMITE_SAQUES):
 
 #positional only e keyword only (positional: saldo keyword: extrato.)
 def view_extrato(saldo, /, *, extrato):
-    print("\n============ Extrato ============")
+    print("\n============= Extrato =============")
     if not extrato:
         print("Nenhuma transação feita.")
     else:
         print(extrato.strip())
         print(f"Saldo atual: R$ {saldo:.2f}")
-        print("================================\n")
+        print("=================================\n")
 
 def create_user(users):
 
