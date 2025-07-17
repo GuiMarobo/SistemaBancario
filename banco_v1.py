@@ -56,7 +56,7 @@ def create_user(users):
         print("CPF não pode ser vazio... Tente novamente")
         return
     # cpf precisa ter 11 digitos
-    if not user_cpf.isdigit() or len(cpf) != 11:
+    if not user_cpf.isdigit() or len(user_cpf) != 11:
         print("CPF inválido. Digite exatamente os 11 números.")
         return
     # cpf não pode estar cadastrado
@@ -148,10 +148,10 @@ while True:
     opcao = input(menu).lower()
 
     if opcao == "d":
-        saldo, extrato = depositar(saldo, extrato)
+        saldo, extrato = deposit(saldo, extrato)
 
     elif opcao == "s":
-        saldo, extrato, numero_saques = sacar(
+        saldo, extrato, numero_saques = withdraw(
             saldo=saldo,
             limite=limite,
             extrato=extrato,
