@@ -19,7 +19,7 @@ Este é um projeto simples de sistema bancário feito em Python como parte do **
 
 1. Clone este repositório:
 ```bash
-git clone https://github.com/guimarobo/SistemaBancario.git
+git clone https://github.com/GuiMarobo/SistemaBancario.git
 ```
 2. Acesse o diretório do projeto:
 ```
