@@ -48,7 +48,7 @@ def view_extrato(saldo, /, *, extrato):
         print(f"Saldo atual: R$ {saldo:.2f}")
         print("=================================\n")
 
-def create_user(users):
+def criar_usuario(users):
 
     user_cpf = (input("Digite seu CPF: (sem pontos e/ou traços).").strip())
     # cpf vazio
@@ -120,7 +120,25 @@ def create_user(users):
     users.append(new_user)
     print("Usuário cadastrado com sucesso!")
 
-# def create_account():
+def criar_conta(users, contas):
+    cpf = input("Digite o seu CPF (somente números): ").strip()
+
+    usuario = next((user for user in users if user ["cpf"] == cpf), None)
+
+    if not usuario:
+        print("Usuário não encontrado")
+
+    numero_conta = len(contas) + 1
+
+    conta = {
+        "agencia": "0001",
+        "numero_conta": numero_conta,
+        "usuario": usuario
+    }
+
+    contas.append(conta)
+    print(f"Conta criada com sucesso!\nNúmero da conta: {numero_conta}")
+
 
 
 # =================== MENU ===================
@@ -142,6 +160,9 @@ limite = 500
 extrato = ""
 numero_saques = 0
 LIMITE_SAQUES = 3
+
+users = []
+contas = []
 
 while True:
     
